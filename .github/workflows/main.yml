@@ -7,7 +7,7 @@ env:
 
 jobs:
   testRunner:
-    name: Test in ${{ matrix.testMode }} ✨
+    name: Test in ${{ matrix.testMode }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -57,7 +57,7 @@ jobs:
 
   buildWindows:
     needs: testRunner
-    name: Build for Windows 🖥️
+    name: Build for Windows
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -99,7 +99,7 @@ jobs:
 
   buildAndroid:
     needs: testRunner
-    name: Build for Android 📱
+    name: Build for Android
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
